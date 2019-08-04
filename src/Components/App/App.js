@@ -31,6 +31,7 @@ class App extends Component {
   }
 
   change(color) {
+    color = color.slice(0, 7)
     if (this.checkColor(color)) {
       color = this.fixColor(color);
       this.setState({
